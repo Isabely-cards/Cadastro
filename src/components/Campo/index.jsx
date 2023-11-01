@@ -21,13 +21,13 @@ const Input = styled.input`
 
 `
 
-function Campo ({type= 'text', placeholder, label}){
+function Campo({ type = 'text', placeholder, label }) {
     return (
         <CampoEstilizado>
             <Label>{label}</Label>
-            <Input 
+            <Input
                 required
-                type={type} 
+                type={type}
                 placeholder={placeholder}
             />
         </CampoEstilizado>
