@@ -15,7 +15,7 @@ const Select = styled.select`
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.01);
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
     width: 90%;
     
 `
