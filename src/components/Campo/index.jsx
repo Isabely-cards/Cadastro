@@ -26,6 +26,7 @@ function Campo ({type= 'text', placeholder, label}){
         <CampoEstilizado>
             <Label>{label}</Label>
             <Input 
+                required
                 type={type} 
                 placeholder={placeholder}
             />
