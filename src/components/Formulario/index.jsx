@@ -10,7 +10,7 @@ const Section = styled.section`
     min-height: 100vh;
     align-items: center;
     margin: 90px 90px;
-    margin-top: -100px;
+    margin-top: -90px;
 `;
 
 const Form = styled.form`
