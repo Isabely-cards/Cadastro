@@ -33,10 +33,10 @@ const Container = styled.div`
 
 function Formulario() {
     const generos = ['Masculino', 'Feminino', 'Outro'];
-
+   
     return (
         <Section>
-            <Form method="post" >
+            <Form method="post">
                 <h1>Cadastro</h1>
                 <Campo
                     label="Nome" 
@@ -45,6 +45,8 @@ function Formulario() {
                 <Campo
                     label="E-mail" 
                     placeholder="Digite seu email"
+                    type="email"
+
                 />
                 <Campo
                     label="Senha" 
