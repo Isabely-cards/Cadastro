@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 const CampoEstilizado = styled.div`
-    margin: 20px 0;
+    margin: 10px 0;
 `
 const Label = styled.label`
     color: black;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 2px;
     font-size: 24px;
     
 `
@@ -16,7 +16,7 @@ const Input = styled.input`
     width: 90%;
     border: 1px solid rgba(0, 0, 0, 0.01);
     font-size: 20px;
-    padding: 15px;
+    padding: 20px;
     box-sizing: border-box;
 
 `
