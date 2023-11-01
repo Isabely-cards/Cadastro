@@ -10,14 +10,12 @@ const Section = styled.section`
     min-height: 100vh;
     align-items: center;
     margin: 90px 90px;
-    
-    h1 {
-        font-size: 29px;
-        text-align: center;
-    }
+    margin-top: -100px;
 `;
 
 const Form = styled.form`
+    display: flex;
+    flex-direction: column;
     width: 600px;
     background-color: #ccc;
     border-radius: 20px;
@@ -26,9 +24,15 @@ const Form = styled.form`
 `;
 
 const Container = styled.div`
-    display: flex; 
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Altere para "space-between" para criar duas colunas. */
+  flex-wrap: wrap; /* Isso permite que as colunas se quebrem para uma nova linha quando o espaço for insuficiente. */
+`;
+
+const Column = styled.div`
+  flex: 1; /* Isso faz com que cada coluna ocupe metade da largura do container. */
+  padding: 10px; /* Adicione um espaçamento entre as colunas, se desejar. */
 `;
 
 function Formulario() {
@@ -36,8 +40,10 @@ function Formulario() {
    
     return (
         <Section>
+            
             <Form method="post">
-                <h1>Cadastro</h1>
+            <Container>
+            <Column>
                 <Campo
                     label="Nome" 
                     placeholder="Digite seu nome"
@@ -58,16 +64,16 @@ function Formulario() {
                     placeholder="Confirmar Senha" 
                     type="password"
                 />
-                <Container>
-                    <ListaSuspensa 
+                </Column>
+                <Column>
+                <ListaSuspensa 
                         label="Gênero" 
                         options={generos} 
-                    />
-                    <Campo
+                />
+                <Campo
                         type="date"
                         label="Data de nascimento" 
-                    />
-                </Container>
+                />
                 <Campo
                     label="Cidade" 
                     placeholder="Digite sua cidade" 
@@ -76,6 +82,8 @@ function Formulario() {
                     label="País" 
                     placeholder="Digite seu país" 
                 />
+                </Column>
+                </Container>
                 <Button>Cadastrar</Button>
             </Form>
         </Section>
