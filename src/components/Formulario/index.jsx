@@ -37,52 +37,52 @@ const Column = styled.div`
 
 function Formulario() {
     const generos = ['Masculino', 'Feminino', 'Outro'];
-   
+
     return (
         <Section>
-            
-            <Form method="post">
-            <Container>
-            <Column>
-                <Campo
-                    label="Nome" 
-                    placeholder="Digite seu nome"
-                />
-                <Campo
-                    label="E-mail" 
-                    placeholder="Digite seu email"
-                    type="email"
 
-                />
-                <Campo
-                    label="Senha" 
-                    placeholder="Digite sua senha" 
-                    type="password"
-                />
-                <Campo
-                    label="Confirmar Senha" 
-                    placeholder="Confirmar Senha" 
-                    type="password"
-                />
-                </Column>
-                <Column>
-                <ListaSuspensa 
-                        label="Gênero" 
-                        options={generos} 
-                />
-                <Campo
-                        type="date"
-                        label="Data de nascimento" 
-                />
-                <Campo
-                    label="Cidade" 
-                    placeholder="Digite sua cidade" 
-                />
-                <Campo
-                    label="País" 
-                    placeholder="Digite seu país" 
-                />
-                </Column>
+            <Form method="post">
+                <Container>
+                    <Column>
+                        <Campo
+                            label="Nome"
+                            placeholder="Digite seu nome"
+                        />
+                        <Campo
+                            label="E-mail"
+                            placeholder="Digite seu email"
+                            type="email"
+
+                        />
+                        <Campo
+                            label="Senha"
+                            placeholder="Digite sua senha"
+                            type="password"
+                        />
+                        <Campo
+                            label="Confirmar Senha"
+                            placeholder="Confirmar Senha"
+                            type="password"
+                        />
+                    </Column>
+                    <Column>
+                        <ListaSuspensa
+                            label="Gênero"
+                            options={generos}
+                        />
+                        <Campo
+                            type="date"
+                            label="Data de nascimento"
+                        />
+                        <Campo
+                            label="Cidade"
+                            placeholder="Digite sua cidade"
+                        />
+                        <Campo
+                            label="País"
+                            placeholder="Digite seu país"
+                        />
+                    </Column>
                 </Container>
                 <Button>Cadastrar</Button>
             </Form>
